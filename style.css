@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*------------ Fonts ------------*/
+
+@font-face {
+    font-family: 'Circular Light';
+    src: url('fonts/CircularStd-Light.woff2') format('woff2'),
+        url('fonts/CircularStd-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ortica Light';
+    src: url('fonts/Ortica-Light.woff2') format('woff2'),
+        url(' fonts/Ortica-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+/*------------ General Styles ------------*/
+
+h1, h2 {
+  font-family: 'Ortica Light', Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 48pt;
+  line-height: 52pt;
+  margin: 0;
+  color: #000;
+}
+h1 {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24pt;
+  line-height: 130%;
+}
+body, p, a {
+  font-family: 'Circular Light', Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 13pt;
+  line-height: 130%;
+  margin: 0;
+  color: #000;
+}
+.p-secondary  {
+  color: #000;
+}
+.p-secondary:hover  {
+  color: #8e8e8e;
+}
+a {
+  border-bottom: 1px solid;
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #8E8E8E;
+}
+span {
+  display: block;
+}
+
+
+
+
+
+/*------------ Layout Grid ------------*/
+
+body {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav {
+  padding-top: 10px;
+  width: 100%;
+}
+.nav-left {
+}
+.right {
+  text-align: right;
+
+}
+
+
+#header {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+}
+  @media (max-width: 800px) {
+    #header {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+#footer {
+  padding: 50px;
+  text-align: center;
+}
+    @media (max-width: 800px) {
+      #footer {
+        padding: 20px;
+      }
+    }
+
+
+
+
+
+.year-name {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+.year {
+}
+.row {
+  width: 100%;
+  height: auto;
+}
+
+.book {
+  width: 28%;
+  padding-bottom: 100px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+  vertical-align: top;
+}
+  @media (max-width: 800px) {
+    .book {
+      width: 70%;
+      margin-left: 14.5%;
+      margin-right: 14.5%;
+      padding-bottom: 100px;
+    }
+  }
+
+.book-image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+/*  border-radius: 10px;*/
+}
+.outline {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+/*  border-radius: 10px;*/
+} 
+
+.book-info {
+
+}
+
+.book-title {
+  font-family: 'Ortica Light', Helvetica, sans-serif;
+  font-size: 28px;
+  padding-bottom: 2px;
+}
+
+.book-author {
+/*  font-family: 'Ortica Light', Helvetica, sans-serif;*/
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.book-description {
+
+}
