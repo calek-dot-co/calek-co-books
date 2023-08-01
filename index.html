@@ -37,6 +37,16 @@
 		<div class="row">
 
 			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2023-sapiens.jpg" alt="Book cover a CD in a plastic jewel case"/>
+				</div>
+				<div class="book-info">
+					<p class="book-title">Sapiens: A Brief History of Humankind</p>
+					<p class="book-author">Yuval Noah Harari</p>
+				</div>
+			</div>
+
+			<div class="book">
 				<div class="book-image">
 					<img src="images/2023-understanding-comics.jpg" alt="Book cover featuring large typography saying Understnading Comics and the main character, with various comic illustrations in the background."/>
 				</div>
@@ -56,6 +66,9 @@
 					<p class="book-author">Cal Newport</p>
 				</div>
 			</div>
+			
+		</div>
+		<div class="row">
 
 			<div class="book">
 				<div class="book-image outline">
@@ -67,7 +80,8 @@
 					<p class="book-description">Great book with many still relevant concepts 20 years later – time to find more Gibson books to read.</p>
 				</div>
 			</div>
-			
+
+
 		</div>
 	</div>
 
@@ -235,12 +249,62 @@
 			</div>
 
 		</div>
+		<div class="row">
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/20XX-brave-new-world.jpg" alt="Book cover featuring an illustration of the world"/>
+				</div>
+				<div class="book-info">
+					<p class="book-title">Brave New World</p>
+					<p class="book-author">Aldous Huxley</p>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 
 	<div id="footer">
 		<p><a href="#header" class="p-secondary">↑ Back to the top</a> &emsp;&emsp;Collated by <a href="https://www.calek.co" target="_blank">Luke</a></p><br>
 	</div>
+
+
+
+	<!-- - - - - - - - - Scripts - - - - - - - - -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- - - - Smooth Scroll - - - -->
+    <script>
+      $(document).on('click', 'a[href^="#2023"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 200);
+      });
+      $(document).on('click', 'a[href^="#2022"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+      $(document).on('click', 'a[href^="#2021"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+      });
+      $(document).on('click', 'a[href^="#20XX"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1200);
+      });
+    </script>
 
 </body>
 </html>
