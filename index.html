@@ -20,15 +20,39 @@
 <body>
 
 
-<!-- 	<div id="nav">
-		<div class="nav-left p-secondary">← <a>Words Written</a></div>
-		<div class="nav-right p-secondary">Collated by <a href="https://www.calek.co">Luke</a></div>
-	</div> -->
-
-
 	<div id="header">
 		<h1>Books I've Read</h1>
-		<p>Jump to year: <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
+		<p>Jump to year: <a href="#2024">2024</a>, <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
+	</div>
+
+
+	<div id="2024" class="year-name"><h2>2024</h2></div>
+	<div class="year">
+		<div class="row">
+
+			<div class="book">
+				<div class="book-image">
+					<img src="images/2024-connected-by-design.jpg" alt="A red book cover with 6 white circles in a 2 x 3 grid and large typography."/>
+				</div>
+				<div class="book-info">
+					<p class="book-title">Connected by Design</p>
+					<p class="book-author">Barry Wacksman, Chris Stutzman</p>
+					<p class="book-description">Insights into R/GA's design approach, circa 2014.</p>
+				</div>
+			</div>
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2024-steve-jobs.jpg" alt="A book cover containing a black and white photo of Steve Jobs."/>
+				</div>
+				<div class="book-info">
+					<p class="book-title">Steve Jobs</p>
+					<p class="book-author">Walter Isaacson</p>
+					<p class="book-description">Captivating from cover to cover – I'd really like to work at Apple one day.</p>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 
 
@@ -131,6 +155,7 @@
 		</div>
 	</div>
 
+
 	<div id="2022" class="year-name"><h2>2022</h2></div>	
 	<div class="year">
 		<div class="row">
@@ -184,6 +209,7 @@
 		</div>
 	</div>
 
+
 	<div id="2021" class="year-name"><h2>2021</h2></div>	
 	<div class="year">
 		<div class="row">
@@ -222,6 +248,7 @@
 			
 		</div>
 	</div>
+
 
 	<div id="20XX" class="year-name"><h2>Earlier</h2></div>
 	<div class="year">
@@ -322,19 +349,26 @@
 
     <!-- - - - Smooth Scroll - - - -->
     <script>
-      $(document).on('click', 'a[href^="#2023"]', function (event) {
+      $(document).on('click', 'a[href^="#2024"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 200);
       });
+      $(document).on('click', 'a[href^="#2023"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+      });
       $(document).on('click', 'a[href^="#2022"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
+        }, 600);
       });
       $(document).on('click', 'a[href^="#2021"]', function (event) {
         event.preventDefault();
@@ -348,7 +382,7 @@
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1200);
+        }, 1000);
       });
     </script>
 
