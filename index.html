@@ -21,7 +21,24 @@
 
 	<div id="header">
 		<h1>Books I've Read</h1>
-		<p>Jump to year: <a href="#2024">2024</a>, <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
+		<p>Jump to year: <a href="#2025">2025</a>, <a href="#2024">2024</a>, <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
+	</div>
+
+	<div id="2025" class="year-name"><h2>2025</h2></div>
+	<div class="year">
+		<div class="row">
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-rise-and-fall.jpg" alt="The book's title inside of golden circluar pattern."/>
+				</div>
+				<div class="book-info">
+					<p class="book-title">Rise and Fall: A history of the World in Ten Empires</p>
+					<p class="book-author">Paul Strathern</p>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 
 
@@ -31,7 +48,7 @@
 
 			<div class="book">
 				<div class="book-image">
-					<img src="images/2024-design-for-the-real-world.jpg" alt="A paragraph of text with green and white colour coding to reveal the book's title.."/>
+					<img src="images/2024-design-for-the-real-world.jpg" alt="A paragraph of text with green and white colour coding to reveal the book's title."/>
 				</div>
 				<div class="book-info">
 					<p class="book-title">Design for the Real World</p>
@@ -447,40 +464,47 @@
 
     <!-- - - - Smooth Scroll - - - -->
     <script>
+      $(document).on('click', 'a[href^="#2025"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 100);
+      });
       $(document).on('click', 'a[href^="#2024"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 200);
+        }, 300);
       });
       $(document).on('click', 'a[href^="#2023"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 400);
+        }, 500);
       });
       $(document).on('click', 'a[href^="#2022"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 600);
+        }, 700);
       });
       $(document).on('click', 'a[href^="#2021"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 800);
+        }, 900);
       });
       $(document).on('click', 'a[href^="#20XX"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1000);
+        }, 1100);
       });
     </script>
 
