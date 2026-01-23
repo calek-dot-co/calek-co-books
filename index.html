@@ -21,23 +21,97 @@
 
 	<div id="header">
 		<h1>Books I've Read</h1>
-		<p>Order: From lastest to earliest.<br>Jump to year: <a href="#2025">2025</a>, <a href="#2024">2024</a>, <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
+		<p>Order: From lastest to earliest.<br>Jump to year: <a href="#2026">2026</a>, <a href="#2025">2025</a>, <a href="#2024">2024</a>, <a href="#2023">2023</a>, <a href="#2022">2022</a>, <a href="#2021">2021</a>, <a href="#20XX">Earlier</a></p>
 	</div>
+
+
+	<div id="2026" class="year-name"><h2>2026</h2></div>
+	<div class="year">
+		<div class="row">
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2026-tibilisi.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">Tbilisi: A Guide</p>
+					<p class="book-author">Georgy Khutsishvili</p>
+					<p class="book-description">A Soviet-era guide to an amazing city.</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
 
 	<div id="2025" class="year-name"><h2>2025</h2></div>
 	<div class="year">
 		<div class="row">
 
-<!-- 			<div class="book">
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-we-the-living.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">We The Living</p>
+					<p class="book-author">Ayn Rand</p>
+				</div>
+			</div>
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-solaris.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">Solaris</p>
+					<p class="book-author">Stanisław Lem</p>
+					<p class="book-description">Maybe the best short sci-fi book I've read.</p>
+				</div>
+			</div>
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-apple-in-china.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">Apple in China</p>
+					<p class="book-author">Patrick McGee</p>
+				</div>
+			</div>
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-project-hail-mary.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">Project Hail Mary</p>
+					<p class="book-author">Andy Weri</p>
+					<p class="book-description">Glad to have read the book before I see the movie.</p>
+				</div>
+			</div>
+
+			<div class="book">
+				<div class="book-image outline">
+					<img src="images/2025-free.jpg">
+				</div>
+				<div class="book-info">
+					<p class="book-title">Free</p>
+					<p class="book-author">Lea Ypi</p>
+					<p class="book-description">After traveling to Albania in late 2025, this was a good historyal read.</p>
+				</div>
+			</div>
+
+			<div class="book">
 				<div class="book-image outline">
 					<img src="images/2025-bookseller-of-kabul.jpg">
 				</div>
 				<div class="book-info">
 					<p class="book-title">The Bookseller of Kabul</p>
 					<p class="book-author">Åsne Seierstad</p>
-					<p class="book-description">...</p>
+					<p class="book-description">Facinating insights into a very changing country.</p>
 				</div>
-			</div> -->
+			</div>
 
 			<div class="book">
 				<div class="book-image outline">
@@ -587,47 +661,54 @@
 
     <!-- - - - Smooth Scroll - - - -->
     <script>
-      $(document).on('click', 'a[href^="#2025"]', function (event) {
+      $(document).on('click', 'a[href^="#2026"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 100);
       });
-      $(document).on('click', 'a[href^="#2024"]', function (event) {
+      $(document).on('click', 'a[href^="#2025"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 300);
       });
-      $(document).on('click', 'a[href^="#2023"]', function (event) {
+      $(document).on('click', 'a[href^="#2024"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
       });
-      $(document).on('click', 'a[href^="#2022"]', function (event) {
+      $(document).on('click', 'a[href^="#2023"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 700);
       });
-      $(document).on('click', 'a[href^="#2021"]', function (event) {
+      $(document).on('click', 'a[href^="#2022"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 900);
       });
-      $(document).on('click', 'a[href^="#20XX"]', function (event) {
+      $(document).on('click', 'a[href^="#2021"]', function (event) {
         event.preventDefault();
 
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1100);
+      });
+      $(document).on('click', 'a[href^="#20XX"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1300);
       });
     </script>
 

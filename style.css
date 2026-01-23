@@ -36,7 +36,7 @@ h1 {
   margin-bottom: 20px;
 }
 h2 {
-  font-size: 24pt;
+  font-size: 32pt;
   line-height: 130%;
 }
 body, p, a {
@@ -129,6 +129,12 @@ body {
   width: 100%;
   height: auto;
 }
+  @media (max-width: 800px) {
+    .row {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
 
 .book {
   width: 14%;
@@ -140,9 +146,9 @@ body {
 }
   @media (max-width: 800px) {
     .book {
-      width: 70%;
-      margin-left: 14.5%;
-      margin-right: 14.5%;
+      width: 38%;
+      margin-left: 4%;
+      margin-right: 4%;
       padding-bottom: 100px;
     }
   }
@@ -171,16 +177,18 @@ img {
 
 .book-title {
   font-family: 'Ortica Light', Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   padding-bottom: 2px;
 }
 
 .book-author {
 /*  font-family: 'Ortica Light', Helvetica, sans-serif;*/
-  font-size: 20px;
+  font-size: 16px;
+  padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .book-description {
-
+  font-size: 16px;
+  padding-bottom: 15px;
 }
